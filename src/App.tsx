@@ -1,8 +1,10 @@
+import './global.scss'
+import { AppRoutes } from './routes/routes'
 
 function App() {
   return (
     <>
-      <h1>Adam Lettering</h1>
+      <AppRoutes />
     </>
   )
 }

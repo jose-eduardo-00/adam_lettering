@@ -1,0 +1,28 @@
+:root {
+    --colorWhite: rgb(255,255,255);
+    --colorGray: rgb(242,242,242);
+    --colorSecondaryGray: rgb(135, 148, 155);
+    --colorPrimaryBlack: rgb(22, 27, 34);
+    --colorSecondaryBlack: rgb(33, 40, 48);
+    --colorTertiaryBlack: rgb(47, 46, 46);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--colorWhite);
+}
+
+@font-face {
+    font-family: 'poppinsLight';
+    src: local('Poppins'), url(./fonts/poppins/Poppins-Light.ttf) format('truetype');
+}

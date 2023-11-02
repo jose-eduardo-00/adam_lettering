@@ -1,0 +1,25 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 204px;
+    font-family: 'poppinsLight';
+    font-size: 18px;
+    background-color: var(--colorWhite);
+
+    .header-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+
+        .header-navigation {
+
+            .navigation-options {
+                display: flex;
+                gap: 30px;
+            }
+        }
+    }
+}
