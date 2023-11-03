@@ -1,6 +1,5 @@
 .footer {
-    position: fixed;
-    bottom: 0;
+    position: static;
     height: 150px;
     width: 100%;
     display: flex;
@@ -8,4 +7,53 @@
     align-items: center;
     justify-content: space-around;
     background-color: var(--colorTertiaryBlack);
+
+    .contact-title {
+        font-family: 'poppinsBlack';
+        font-size: 40px;
+        letter-spacing: 2px;
+        color: var(--colorWhite);
+    }
+    
+    .contact-options {
+        display: grid;
+        padding: 10px;
+        row-gap: 1vw;
+        column-gap: 4vw;
+        grid-template-areas: "email instagram facebook"
+                             "whatsapp behance tiktok";
+        font-family: 'poppinsLight';
+
+        &:nth-child(1){
+            grid-area: email;
+        }
+        &:nth-child(2){
+            grid-area: instagram;
+        }
+        &:nth-child(3){
+            grid-area: facebook;
+        }
+        &:nth-child(4){
+            grid-area: whatsapp;
+        }
+        &:nth-child(5){
+            grid-area: behance;
+        }
+        &:nth-child(6){
+            grid-area: tiktok;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            color: var(--colorWhite);
+            border-bottom: 1px solid transparent;
+            transition: .4s ease-in-out;
+
+            &:hover {
+                border-bottom-color: var(--colorWhite);
+            }
+        }
+    }
 }
