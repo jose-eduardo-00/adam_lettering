@@ -1,4 +1,7 @@
-main {
-    height: 52.8vh;
+.orcamento {
     background-color: var(--colorGray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }

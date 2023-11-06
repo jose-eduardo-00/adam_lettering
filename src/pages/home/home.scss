@@ -1,4 +1,12 @@
-main {
-    height: 52.8vh;
+.home {
     background-color: var(--colorGray);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+
+    .home-text {
+        font-family: 'poppinsLight';
+        font-size: 18px;
+    }
 }

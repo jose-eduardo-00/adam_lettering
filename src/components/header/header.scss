@@ -6,6 +6,7 @@
     font-family: 'poppinsLight';
     font-size: 18px;
     background-color: var(--colorWhite);
+    z-index: 10;
 
     .header-div {
         display: flex;
@@ -20,6 +21,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            user-select: none;
 
             h1 {
                 font-size: 18px;
@@ -54,6 +56,7 @@
             top: 40%;
             display: flex;
             gap: 30px;
+            user-select: none;
 
             div {
                 position: relative;

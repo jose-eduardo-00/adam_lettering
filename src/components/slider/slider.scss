@@ -1,0 +1,45 @@
+.home-slider {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    user-select: none;
+
+    .slides {
+
+        .slide {
+            display: none;
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px 1px var(--colorPrimaryBlack);
+        }
+
+        .active {
+            display: flex;
+        }
+    }
+
+    .slides-navigation {
+        display: flex;
+        gap: 10px;
+
+        .btn {
+            width: 15px;
+            height: 15px;
+            background-color: var(--colorWhite);
+            border-color: transparent;
+            border-radius: 10px;
+            box-shadow: 0px 0px 4px 1px var(--colorPrimaryBlack);
+            cursor: pointer;
+            transition: .4s ease-in-out;
+
+            &:hover {
+                background-color: var(--colorTertiaryBlack);
+            }
+
+            &.btn-active {
+                background-color: var(--colorTertiaryBlack);
+            }
+        }
+    }
+}
