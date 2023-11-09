@@ -1,11 +1,12 @@
 function slidesImgToggle() {
-    const slideList: NodeListOf<Element> = document.querySelectorAll('.slide')
-    const btnList: NodeListOf<Element> = document.querySelectorAll('.btn')
+    const slideList: NodeListOf<HTMLImageElement> = document.querySelectorAll('.slide')
+    const btnList: NodeListOf<HTMLButtonElement> = document.querySelectorAll('.btn')
     let currentItem: number = 0
     
     setInterval(() => {
             document.querySelector('.active')?.classList.remove('active')
             document.querySelector('.btn-active')?.classList.remove('btn-active')
+            
             if (currentItem == 0) {
                 slideList[currentItem].classList.add('active')
                 btnList[currentItem].classList.add('btn-active')

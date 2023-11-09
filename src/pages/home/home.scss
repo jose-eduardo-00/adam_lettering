@@ -1,12 +1,20 @@
 .home {
+    min-height: 72.8vh;
     background-color: var(--colorGray);
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
 
-    .home-text {
-        font-family: 'poppinsLight';
-        font-size: 18px;
+    .home-info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .home-text {
+            font-family: 'poppinsLight';
+            font-size: 18px;
+        }
     }
+
 }

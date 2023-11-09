@@ -1,0 +1,68 @@
+.skills-hobbies {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--colorTertiaryBlack);
+
+    h3 {
+        font-family: 'poppinsBlack';
+        font-size: 30px;
+    }
+
+    .icon {
+        border: 1px solid var(--colorTertiaryBlack);
+        border-radius: 10px;
+        padding: 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 18px;
+        font-family: 'poppinsLight';
+    }
+
+    .skills div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hobbies {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+        font-family: 'poppinsLight';
+        
+        .gamepad{
+            grid-area: gamepad;
+        }
+        .pencil{
+            grid-area: pencil;
+        }
+        .youtube{
+            grid-area: youtube;
+        }
+        .music{
+            grid-area: music;
+        }
+
+        div {
+            display: grid;
+            column-gap: 25px;
+            grid-template-areas: "gamepad  pencil"
+                                 "youtube  music";
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}

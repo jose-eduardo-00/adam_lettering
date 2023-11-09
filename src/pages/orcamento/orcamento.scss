@@ -1,7 +1,8 @@
 .orcamento {
+    min-height: 72.8vh;
     background-color: var(--colorGray);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }

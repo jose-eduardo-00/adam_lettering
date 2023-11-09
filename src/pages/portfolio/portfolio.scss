@@ -1,4 +1,14 @@
-main {
-    height: 52.8vh;
+.portfolio {
     background-color: var(--colorGray);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    .portfolio-title {
+        font-family: 'poppinsBlack';
+        font-size: 50px;
+        color: var(--colorTertiaryBlack);
+        letter-spacing: 2px;
+    }
 }

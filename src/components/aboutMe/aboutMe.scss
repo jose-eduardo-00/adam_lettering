@@ -1,0 +1,17 @@
+.aboutme {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .aboutme-img {
+        border-radius: 10px;
+        box-shadow: 0px 0px 14px 2px var(--colorPrimaryBlack);
+    }
+
+    .aboutme-text {
+        width: 360px;
+        font-family: 'poppinsLight';
+        font-size: 18px;
+    }
+}

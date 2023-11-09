@@ -95,6 +95,7 @@
                     overflow-x: hidden;
                     visibility: hidden;
                     color: var(--colorPrimaryBlack);
+                    animation: disableTyping .6s ease-in-out;
                 }
 
                 &:hover {

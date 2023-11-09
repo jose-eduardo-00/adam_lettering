@@ -1,0 +1,89 @@
+.quadros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+
+    .quadros-title {
+        color: var(--colorTertiaryBlack);
+        font-family: 'poppinsBlack';
+        font-size: 40px;
+        text-decoration: underline;
+    }
+
+    .quadros-img {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .div-img {
+            position: relative;
+            width: 25%;
+            border-radius: 10px;
+            transition: .4s ease-in-out;
+            
+            &:hover {
+                transform: scale(1.1);
+            }
+            
+            .img {
+                width: 100%;
+                height: 100%;
+                box-shadow: 0px 0px 10px 1px var(--colorPrimaryBlack);
+                border-radius: 10px;
+                transition: .4s ease-in-out;
+            }
+            
+            .img-active {
+                filter: brightness(50%);
+            }
+            
+            .btn-comprar {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 5;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'poppinsBold';
+                font-size: 18px;
+                color: var(--colorTertiaryBlack);
+                letter-spacing: 1px;
+                height: 25%;
+                background-color: var(--colorGray);
+                cursor: pointer;
+                border-radius: 0 0 10px 10px;
+                transition: .4s ease-in-out;
+                visibility: hidden;
+                overflow: hidden;
+                animation: disableBtn .4s ease-in-out;
+            }
+            
+            .btn-active {
+                animation: showBtn .4s ease-in-out;
+                visibility: visible;
+            }
+
+            @keyframes showBtn {
+                0% {
+                    height: 0;
+                }100% {
+                    height: 25%;
+                }
+            }
+
+            @keyframes disableBtn {
+                0% {
+                    height: 25%;
+                }100% {
+                    height: 0;
+                }
+            }
+        }
+    }
+}
