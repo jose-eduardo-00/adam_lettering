@@ -1,5 +1,5 @@
 .footer {
-    height: 150px;
+    min-height: 150px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -54,6 +54,17 @@
             &:hover {
                 border-bottom-color: var(--colorWhite);
             }
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .footer {
+
+        .contact-options {
+            grid-template-areas: "email instagram"
+                                 "facebook whatsapp"
+                                 "behance tiktok";
         }
     }
 }

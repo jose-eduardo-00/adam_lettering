@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom'
 import logoHeader from '../../assets/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBagShopping } from '@fortawesome/free-solid-svg-icons'
+import { faBagShopping, faMobileScreenButton } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faTiktok } from '@fortawesome/free-brands-svg-icons/faTiktok'
 import { faBehance } from '@fortawesome/free-brands-svg-icons/faBehance'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons/faFacebookF'
 import './header.scss'
+import { menuAnimation } from './utils'
 
 const Header = () => {
     return (
@@ -36,6 +37,7 @@ const Header = () => {
                         </li>
                     </ul>
                 </nav>
+                <FontAwesomeIcon icon={faMobileScreenButton} className='menu-social-media' onClick={menuAnimation} />
                 <nav className='navigation-social-media'>
                     <div>
                         <a href="https://www.elo7.com.br/LojaLetteringArte?utm_source=copy&utm_medium=store" target="_blank">

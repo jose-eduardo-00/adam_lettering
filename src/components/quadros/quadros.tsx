@@ -9,8 +9,6 @@ import valorizeseGratis from '../../assets/quadros/quadro-valorize_se_gratis.png
 import './quadros.scss'
 import { imgQuadroSelect } from './utils'
 
-// terminar de fazer o responsivo do site
-
 const Quadros = () => {
 
     useEffect(() => {

@@ -87,3 +87,20 @@
         }
     }
 }
+
+@media (max-width: 425px) {
+    .quadros {
+
+        .quadros-img {
+
+            .div-img {
+                width: 40%;
+
+                .btn-comprar {
+                    visibility: visible;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

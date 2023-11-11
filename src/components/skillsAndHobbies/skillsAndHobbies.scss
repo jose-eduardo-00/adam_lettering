@@ -3,6 +3,8 @@
     display: flex;
     justify-content: space-evenly;
     color: var(--colorTertiaryBlack);
+    flex-wrap: wrap;
+    gap: 20px;
 
     h3 {
         font-family: 'poppinsBlack';
@@ -23,12 +25,12 @@
         gap: 10px;
         font-size: 18px;
         font-family: 'poppinsLight';
-    }
 
-    .skills div {
-        display: flex;
-        align-items: center;
-        gap: 10px;
+        div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
     }
 
     .hobbies {
@@ -62,6 +64,24 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .skills-hobbies {
+        
+        .hobbies {
+
+            div {
+                display: flex;
+                align-items: start;
+                gap: 10px;
+                
+                div {
+                    flex-direction: row;
+                }
             }
         }
     }
